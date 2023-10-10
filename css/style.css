@@ -1,9 +1,30 @@
 /* Reset */
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+/* root variable */
+:root {
+    --color-primaray: #FF5722;
+    --color--secondary-light: #FFF6F2;
+    --color--secondary-dark: #FFA589;
+    --color-navbar: #F8F8F8;
+    --color-white: #FFFFFF;
+    --color-headings-font: #000000;
+    --color-body-font: #333333;
+}
+
+body {
+    color: var(--color-body-font);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings-font);
 }
