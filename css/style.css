@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
 }
 
 /* root variable */
@@ -122,5 +122,37 @@ h2 {
 @media screen and (min-width: 1024px) {
     .badge {
         font-size: 1.4rem;
+    }
+}
+
+/* list */
+.list {
+    list-style: none;
+    font-size: 1.8rem;
+
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin: 2rem 2rem;
+
+}
+
+.list--tick .list__item::before {
+    content: "";
+
+    background: url(/assets/images/check\ 1.svg) no-repeat center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.list--tick .list__item {
+    margin-bottom: 2rem;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        font-size: 1.8rem;
     }
 }
