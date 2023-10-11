@@ -98,3 +98,29 @@ h2 {
         font-size: 2rem;
     }
 }
+
+/* badge */
+.badge {
+    margin: 2rem 2rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-primaray);
+    border-radius: 32px;
+    font-size: 1.2rem;
+    align-items: center;
+    color: var(--color-primaray);
+    background-color: var(--color-white);
+    text-transform: uppercase;
+
+}
+
+.badge-primary {
+    background-color: var(--color-primaray);
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.4rem;
+    }
+}
