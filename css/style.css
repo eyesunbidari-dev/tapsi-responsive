@@ -11,12 +11,13 @@
 /* root variable */
 :root {
     --color-primaray: #FF5722;
-    --color--secondary-light: #FFF6F2;
-    --color--secondary-dark: #FFA589;
+    --color--secondary-light: #FFA589;
+    --color--secondary-dark: #FF7A50;
     --color-navbar: #F8F8F8;
     --color-white: #FFFFFF;
     --color-headings-font: #000000;
     --color-body-font: #333333;
+
 }
 
 html {
@@ -101,7 +102,7 @@ h2 {
 
 /* badge */
 .badge {
-    margin: 2rem 2rem;
+
     display: inline-block;
     padding: 0.5rem 1rem;
     border: 2px solid var(--color-primaray);
@@ -154,5 +155,61 @@ h2 {
 @media screen and (min-width: 1024px) {
     .list--tick .list__item {
         font-size: 1.8rem;
+    }
+}
+
+/* paln */
+.plan-block {
+    display: grid;
+    gap: 2rem 3rem;
+
+}
+
+.plan {
+    font-size: 1.8rem;
+    max-width: 500px;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px -1px 8px 4px rgba(0, 0, 0, 0.39);
+    background-color: aqua;
+    margin: 1rem;
+}
+
+.plan__intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.plan__price {
+    font-size: 3rem;
+}
+
+.plan__billing-cycle {
+    font-size: 1.4rem;
+
+}
+
+.plan__description {
+    display: block;
+    margin-top: 1rem;
+}
+
+.card__header,
+.card__body {
+    padding: 1rem 1.5rem;
+}
+
+.card__header {
+    background-color: var(--color--secondary-dark);
+    color: var(--color-white);
+}
+
+@media screen and (min-width:1024px) {
+    .plan-block {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
