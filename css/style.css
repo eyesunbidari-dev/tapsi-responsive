@@ -149,6 +149,8 @@ h2 {
 
 .list--tick .list__item {
     margin-bottom: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
 
 }
 
@@ -161,20 +163,22 @@ h2 {
 /* paln */
 .plan-block {
     display: grid;
-    gap: 2rem 3rem;
+    gap: 4rem 3rem;
+    margin-top: 3rem;
 
 }
 
 .plan {
     font-size: 1.8rem;
-    max-width: 500px;
+    max-width: 400px;
+    transition: all 0.4 ease-out;
 }
 
 .card {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px -1px 8px 4px rgba(0, 0, 0, 0.39);
-    background-color: aqua;
+    background-color: var(--color-navbar);
     margin: 1rem;
 }
 
@@ -207,7 +211,21 @@ h2 {
     background-color: var(--color--secondary-dark);
     color: var(--color-white);
 }
-
+.card--primary .card__header{
+    background-color:var(--color--secondary-light);
+}
+.plan .btn-block{
+    margin-top: 5rem;
+}
+.plan--popular{
+    transform: scale(1.01);
+}
+.plan--popular:hover{
+    transform: scale(1.2);
+}
+.plan:hover{
+    transform: scale(1.1);
+}
 @media screen and (min-width:1024px) {
     .plan-block {
         grid-template-columns: repeat(3, 1fr);
