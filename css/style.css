@@ -163,8 +163,10 @@ h2 {
 /* paln */
 .plan-block {
     display: grid;
-    gap: 4rem 3rem;
+    gap: 7rem 4rem;
     margin-top: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,350px));
 
 }
 
@@ -227,7 +229,12 @@ h2 {
     transform: scale(1.1);
 }
 @media screen and (min-width:1024px) {
-    .plan-block {
+    /* .plan-block {
         grid-template-columns: repeat(3, 1fr);
-    }
+    } */
+}
+/* container */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
