@@ -29,6 +29,7 @@ body {
     color: var(--color-body-font);
     /* mobile first */
     font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 h1,
@@ -45,6 +46,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
+    padding: 1.5rem;
 }
 
 @media screen and (min-width:1024) {
@@ -237,4 +239,42 @@ h2 {
 .container{
     max-width: 1140px;
     margin: 0 auto;
+}
+/* Feature */
+.feature{
+    margin-top: 1rem;
+    display: grid;
+   
+}
+.feature__text{
+ 
+ padding: 1.5rem 1.5rem;
+ 
+
+
+}
+.feature .btn{
+    margin-top: 4rem;
+}
+.feature__image > img
+{
+    
+    width: 80%;
+    height: auto;
+    margin-right: 3rem;
+    
+}
+.feature__image{
+    margin-bottom: 2rem;
+}
+.feature .btn{
+   margin-right: 1rem;
+}
+  
+
+@media screen and (min-width:1024px){
+    .feature{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
 }
