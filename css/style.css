@@ -168,7 +168,7 @@ h2 {
     gap: 7rem 4rem;
     margin-top: 3rem;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit,minmax(250px,350px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
 
 }
 
@@ -215,66 +215,116 @@ h2 {
     background-color: var(--color--secondary-dark);
     color: var(--color-white);
 }
-.card--primary .card__header{
-    background-color:var(--color--secondary-light);
+
+.card--primary .card__header {
+    background-color: var(--color--secondary-light);
 }
-.plan .btn-block{
+
+.plan .btn-block {
     margin-top: 5rem;
 }
-.plan--popular{
+
+.plan--popular {
     transform: scale(1.01);
 }
-.plan--popular:hover{
+
+.plan--popular:hover {
     transform: scale(1.2);
 }
-.plan:hover{
+
+.plan:hover {
     transform: scale(1.1);
 }
+
 @media screen and (min-width:1024px) {
     /* .plan-block {
         grid-template-columns: repeat(3, 1fr);
     } */
 }
+
 /* container */
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /* Feature */
-.feature{
+.feature {
     margin-top: 1rem;
     display: grid;
-   
-}
-.feature__text{
- 
- padding: 1.5rem 1.5rem;
- 
-
 
 }
-.feature .btn{
+
+.feature__text {
+
+    padding: 1.5rem 1.5rem;
+
+
+
+}
+
+.feature .btn {
     margin-top: 4rem;
 }
-.feature__image > img
-{
-    
+
+/* > < css selectors (child) */
+.feature__image>img {
+
     width: 80%;
     height: auto;
     margin-right: 3rem;
-    
+
 }
-.feature__image{
+
+.feature__image {
     margin-bottom: 2rem;
 }
-.feature .btn{
-   margin-right: 1rem;
-}
-  
 
-@media screen and (min-width:1024px){
-    .feature{
-        grid-template-columns: repeat(2,1fr);
+.feature .btn {
+    margin-right: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+    .feature {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
+}
+
+/* Contact-Us */
+.contact-us {
+    display: grid;
+
+}
+
+.contact-us__map {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .contact-us {
+        grid-template-areas:
+            "address form"
+            "map form"
+            "icons form"
+        ;
+        grid-template-columns: 60fr 40fr;
+    }
+
+    .contact-us__form {
+        grid-area: form;
+    }
+
+    .contact-us__address {
+        grid-area: address;
+    }
+
+    .contact-us__map {
+        grid-area: map;
+        display: block;
+    }
+
+    .contact-us__icons {
+        grid-area: icons;
+    }
 }
