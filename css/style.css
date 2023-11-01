@@ -309,7 +309,7 @@ h2 {
             "map form"
             "icons form"
         ;
-        grid-template-columns: 60fr 40fr;
+        grid-template-columns: 70fr 30fr;
     }
 
     .contact-us__form {
@@ -374,6 +374,7 @@ h2 {
 
         flex-direction: row;
         justify-content: space-between;
+
     }
 
     .contact-us__icons .icon__holder {
@@ -403,5 +404,68 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+
     }
+}
+
+.contact-us__map img {
+    width: 100%;
+    height: auto;
+}
+
+/* form */
+
+
+.form-wrapper {
+    height: 100%;
+
+    border: 1px solid #c8c5c5;
+    padding: 5.3rem;
+    border-radius: 10px;
+    box-shadow: 1px 10px 30px rgb(199, 198, 198);
+}
+
+.form-wrapper h3 {
+    margin-bottom: 5.3rem;
+    text-align: center;
+
+}
+
+.form-wrapper form {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+input {
+    display: block;
+    outline: 0;
+    border: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    border-radius: 39px;
+    background-color: #e5e0e0;
+    border: solid 1px #c8c5c5;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    border: solid 1px var(--color-primaray);
+}
+
+.form-wrapper textarea {
+    border-radius: 5px;
+}
+
+.contact-us__form {
+    margin-right: 3rem;
 }
