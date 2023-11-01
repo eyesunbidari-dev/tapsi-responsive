@@ -13,6 +13,8 @@
 }
 
 body,
-button {
+button,
+input,
+textarea {
     font-family: "vazir";
 }
