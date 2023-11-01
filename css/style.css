@@ -316,7 +316,7 @@ h2 {
         grid-area: form;
     }
 
-    .contact-us__icons  {
+    .contact-us__icons {
         grid-area: address;
     }
 
@@ -332,53 +332,76 @@ h2 {
 
 /* ICONS */
 .icon {
-    width: 30px;
-    height: 30px;
-    
+    width: 20px;
+    height: 20px;
+
 }
 
 
 .icon__container {
-    width: 55px;
-    height: 55px;
+    width: 35px;
+    height: 35px;
     display: flex;
-    
     justify-content: center;
     align-items: center;
     background-color: #e5e0e0;
     border-radius: 100%;
     cursor: pointer;
-   
+
 }
-.contact-us__icons{
+
+.contact-us__icons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-   
+
 }
-.contact-us__icons .icon__holder{
+
+.contact-us__icons .icon__holder {
     display: flex;
     align-items: center;
     padding: 2rem 2rem;
-    
+
 }
-.icon__holder__label{
+
+.icon__holder__label {
     margin-left: 2rem;
     display: block;
 }
+
 @media screen and (min-width:1024px) {
-    .contact-us__icons{
-        
+    .contact-us__icons {
+
         flex-direction: row;
         justify-content: space-between;
     }
-    .contact-us__icons .icon__holder{
+
+    .contact-us__icons .icon__holder {
         flex-direction: column;
-        
+
     }
-    .icon__holder__label{
+
+    .icon__holder__label {
         order: 2;
         margin-top: 1.5rem;
-       
+
+    }
+}
+
+.contact-us__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-us__social .icon__holder {
+    padding: 1rem 1rem;
+}
+
+@media screen and (min-width:1024px) {
+    .contact-us__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 }
