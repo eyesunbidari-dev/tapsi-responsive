@@ -469,3 +469,27 @@ textarea {
 .contact-us__form {
     margin-right: 3rem;
 }
+/* Footer */
+.main__footer{
+    background-color: #000000;
+    color: #F8F8F8;
+    min-height: 200px;
+}
+.main__footer .footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer__item a{
+   text-decoration: none;
+   margin-bottom: 1.4rem;
+   display: block;
+   color: var(--color-white);
+}
+.footer__item h6{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.footer__item{
+    margin-bottom: 2rem;
+}
