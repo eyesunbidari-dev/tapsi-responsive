@@ -515,7 +515,7 @@ textarea {
 .main__header{
     background-color: var(--color-navbar);
 }
-.navbar{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -528,7 +528,20 @@ textarea {
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
+    /* max-height: 0;
+    opacity: 0;
+    overflow: hidden; */
+    
 }
+/* .nav.nav__expanded.nav__items{
+   height: 500px;
+   opacity: 1;
+   background-color: #000000;
+   
+}
+.nav__toggler{
+    cursor: pointer;
+} */
 .nav__item{
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #333333;
@@ -544,11 +557,14 @@ textarea {
     display: block;
     padding-bottom: 1rem;
 }
-.nav__toggle{
+.nav__toggler{
     background-color: yellow;
 }
 @media screen and (min-width:768px) {
-    .nav__toggle{
+    .nav{
+        padding: 0 2;
+    }
+    .nav__toggler{
         display: none;
     }
     .nav__items{
