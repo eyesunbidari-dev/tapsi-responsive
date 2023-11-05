@@ -511,3 +511,56 @@ textarea {
         margin-top: 1.5rem;
     }
 }
+/* Navbar */
+.main__header{
+    background-color: var(--color-navbar);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding: 1.5rem 1.5rem;
+}
+.nav__items{
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav__item{
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 1rem;
+    
+}
+.nav__item > a:hover{
+    color: var(--color-primaray);
+}
+.nav__item > a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    padding-bottom: 1rem;
+}
+.nav__toggle{
+    background-color: yellow;
+}
+@media screen and (min-width:768px) {
+    .nav__toggle{
+        display: none;
+    }
+    .nav__items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: space-between;
+    }
+    .nav__item{
+        margin-left: 2.5rem;
+        border: 0;
+        margin-top: 2rem;
+    }
+}
