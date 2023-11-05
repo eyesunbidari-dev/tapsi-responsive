@@ -31,6 +31,7 @@ body {
     /* mobile first */
     font-size: 1.4rem;
     line-height: 1.6;
+  
 }
 
 h1,
@@ -474,22 +475,39 @@ textarea {
     background-color: #000000;
     color: #F8F8F8;
     min-height: 200px;
+   
 }
 .main__footer .footer{
     display: flex;
     flex-direction: column;
+   
 }
 .footer__item a{
    text-decoration: none;
-   margin-bottom: 1.4rem;
+   margin-bottom: 1.2rem;
    display: block;
    color: var(--color-white);
 }
 .footer__item h6{
-    font-size: 1.8rem;
+    color: #FF5722;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .footer__item{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+}
+@media screen and (min-width:1024px){
+    .main__footer .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .footer__item{
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
 }
