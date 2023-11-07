@@ -10,21 +10,34 @@
     <title>Tapsi Demo</title>
   </head>
   <body>
-    <header class="main__header">
-      <nav class="nav container">
-        <a href="#">
-          <img src="/assets/images/logo.svg"/>
-        </a>
-          <!-- <div class="nav__toggler">menu</div> -->
-          <ul class="list nav__items">
-            <li class="nav__item"><a href="#">پشتیبانی</a></li>
-            <li class="nav__item"><a href="#">خدمات کسب و کارها</a></li>
-            <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
-            <li class="nav__item"><a href="#">وبلاگ</a></li>
-          </ul>
-        
-      </nav>
-    </header>
-    <!-- <script src="/js/main.js"></script> -->
+    <section class="hero-section">
+      <picture>
+        <source
+          srcset="assets\images\banner.web.jpg"
+          type="image/jpg"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="assets\images\banner.mobile.jpg"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <img
+          alt="banner"
+          src="assets\images\banner.web.jpg"
+          class="banner-img"
+        />
+      </picture>
+      <div class="hero-wrapper">
+        <div class="intro-btn">
+          <h1>تپسی</h1>
+          <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+          <div class="intro-btn__passengers">دانلود اپلیکیشن مسافران</div>
+          <div class="intro-btn__passengers">دانلود اپلیکیشن مسافران</div>
+          <div class="intro-btn__passengers">دانلود اپلیکیشن مسافران</div>
+          <div class="intro-btn__passengers">دانلود اپلیکیشن مسافران</div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
